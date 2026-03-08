@@ -36,7 +36,11 @@ document.addEventListener('DOMContentLoaded', function() {
             contactLabelMessage: '消息:',
             contactSubmit: '发送消息',
             footerCopyright: '© 2026 KungfuClaw. 保留所有权利。',
-            languageToggle: '中文'
+            languageToggle: '中文',
+            navFeatures: '功能',
+            navArchitecture: '架构',
+            navAbout: '关于我们',
+            navContact: '联系我们'
         }
     };
 
@@ -61,6 +65,13 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('contact-submit').textContent = lang.contactSubmit;
         document.getElementById('footer-copyright').textContent = lang.footerCopyright;
         document.getElementById('language-toggle').textContent = currentLanguage === 'en' ? '中文' : 'English';
+        document.querySelectorAll('.nav-link').forEach((link, index) => {
+            const navItems = {
+                en: ['Features', 'Architecture', 'About', 'Contact'],
+                zh: ['功能', '架构', '关于我们', '联系我们']
+            };
+            link.textContent = navItems[currentLanguage][index];
+        });
     }
 
     function toggleLanguage() {
