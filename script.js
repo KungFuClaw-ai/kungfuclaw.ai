@@ -5,12 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
             heroDescription: 'KungfuClaw is a security and infrastructure platform for AI agents.',
             heroCta: 'Get Started',
             featuresTitle: 'Features',
-            feature1Title: 'Secure AI Agent Runtime',
-            feature1Description: 'Ensure your AI agents run in a secure environment.',
-            feature2Title: 'Local AI Model Support',
-            feature2Description: 'Support for local AI models for faster and more efficient processing.',
-            feature3Title: 'Developer APIs',
-            feature3Description: 'Comprehensive APIs for developers to integrate AI agents easily.',
             feature4Title: 'Privacy-First Architecture',
             feature4Description: 'Built with privacy in mind, protecting your data.',
             architectureTitle: 'Architecture',
@@ -30,12 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
             heroDescription: 'KungfuClaw 是一个专为 AI 代理设计的安全和基础设施平台。',
             heroCta: '立即开始',
             featuresTitle: '功能',
-            feature1Title: '安全的 AI 代理运行时',
-            feature1Description: '确保您的 AI 代理在一个安全的环境中运行。',
-            feature2Title: '本地 AI 模型支持',
-            feature2Description: '支持本地 AI 模型，实现更快和更高效的处理。',
-            feature3Title: '开发者 API',
-            feature3Description: '为开发者提供全面的 API，轻松集成 AI 代理。',
             feature4Title: '隐私优先架构',
             feature4Description: '以隐私为中心构建，保护您的数据。',
             architectureTitle: '架构',
@@ -60,12 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('hero-description').textContent = lang.heroDescription;
         document.getElementById('hero-cta').textContent = lang.heroCta;
         document.getElementById('features-title').textContent = lang.featuresTitle;
-        document.getElementById('feature-1-title').textContent = lang.feature1Title;
-        document.getElementById('feature-1-description').textContent = lang.feature1Description;
-        document.getElementById('feature-2-title').textContent = lang.feature2Title;
-        document.getElementById('feature-2-description').textContent = lang.feature2Description;
-        document.getElementById('feature-3-title').textContent = lang.feature3Title;
-        document.getElementById('feature-3-description').textContent = lang.feature3Description;
         document.getElementById('feature-4-title').textContent = lang.feature4Title;
         document.getElementById('feature-4-description').textContent = lang.feature4Description;
         document.getElementById('architecture-title').textContent = lang.architectureTitle;
