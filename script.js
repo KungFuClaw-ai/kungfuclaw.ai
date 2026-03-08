@@ -64,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('contact-label-message').textContent = lang.contactLabelMessage;
         document.getElementById('contact-submit').textContent = lang.contactSubmit;
         document.getElementById('footer-copyright').textContent = lang.footerCopyright;
-        document.getElementById('language-toggle').textContent = currentLanguage === 'en' ? '中文' : 'English';
         document.querySelectorAll('.nav-link').forEach((link, index) => {
             const navItems = {
                 en: ['Features', 'Architecture', 'About', 'Contact'],
@@ -72,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
             };
             link.textContent = navItems[currentLanguage][index];
         });
+        document.getElementById('language-toggle').textContent = currentLanguage === 'en' ? '中文' : 'English';
     }
 
     function toggleLanguage() {
