@@ -82,6 +82,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('language-toggle').addEventListener('click', toggleLanguage);
 
+    document.getElementById('preview-button').addEventListener('click', generatePreview);
+
     updateLanguage();
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -99,4 +101,35 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     document.querySelector('.hamburger').addEventListener('click', toggleMenu);
+
+    function generatePreview() {
+        const previewContent = document.getElementById('preview-content');
+        previewContent.innerHTML = `
+            <h2>${document.getElementById('hero-headline').textContent}</h2>
+            <p>${document.getElementById('hero-description').textContent}</p>
+            <h2>${document.getElementById('features-title').textContent}</h2>
+            <div class="feature-list">
+                <div class="feature">
+                    <h3>${document.getElementById('feature-4-title').textContent}</h3>
+                    <p>${document.getElementById('feature-4-description').textContent}</p>
+                </div>
+            </div>
+            <h2>${document.getElementById('architecture-title').textContent}</h2>
+            <div class="diagram-placeholder">
+                <p>${document.getElementById('architecture-description').textContent}</p>
+            </div>
+            <h2>${document.getElementById('about-title').textContent}</h2>
+            <p>${document.getElementById('about-description').textContent}</p>
+            <h2>${document.getElementById('contact-title').textContent}</h2>
+            <form>
+                <label>${document.getElementById('contact-label-name').textContent}</label>
+                <input type="text" required>
+                <label>${document.getElementById('contact-label-email').textContent}</label>
+                <input type="email" required>
+                <label>${document.getElementById('contact-label-message').textContent}</label>
+                <textarea required></textarea>
+                <button type="submit" class="cta-button" disabled>${document.getElementById('contact-submit').textContent}</button>
+            </form>
+        `;
+    }
 });
