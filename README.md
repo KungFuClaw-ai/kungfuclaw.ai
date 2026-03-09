@@ -1,2 +1,2 @@
 # kungfuclaw.ai
-The KungFuClaw.ai website.
+The [KungfuClaw.ai](https://kungfuclaw.ai/) website.
