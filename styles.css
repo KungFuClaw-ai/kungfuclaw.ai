@@ -39,6 +39,11 @@ header .container {
     color: #ff6347;
 }
 
+.logo img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
 .nav-menu {
     display: flex;
     gap: 1rem;
