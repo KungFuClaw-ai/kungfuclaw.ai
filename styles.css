@@ -37,6 +37,13 @@ header .container {
     font-size: 2rem;
     font-weight: bold;
     color: #ff6347;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .logo img {
