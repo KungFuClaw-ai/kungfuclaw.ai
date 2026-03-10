@@ -3,80 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KungfuClaw</title>
+    <title>KungfuClaw - Secure AI Agent Infrastructure & Security Platform</title>
+    <meta name="description" content="KungfuClaw provides robust security and infrastructure solutions for AI agents with privacy-first architecture.">
+    <meta name="keywords" content="AI agents, security platform, infrastructure, AI security, machine learning security, privacy-first AI, KungfuClaw">
+    <meta name="author" content="KungfuClaw">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kungfuclaw.ai/">
+    <meta property="og:title" content="KungfuClaw - Secure AI Agent Infrastructure & Security Platform">
+    <meta property="og:description" content="KungfuClaw provides robust security and infrastructure solutions for AI agents with privacy-first architecture.">
+    <meta property="og:image" content="images/kungfuclaw-large.png">
+    <meta property="og:site_name" content="KungfuClaw">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KungfuClaw - Secure AI Agent Infrastructure & Security Platform">
+    <meta name="twitter:description" content="KungfuClaw provides robust security and infrastructure solutions for AI agents with privacy-first architecture.">
+    <meta name="twitter:image" content="images/kungfuclaw-large.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/kungfuclaw.png">
+    <link rel="apple-touch-icon" href="images/kungfuclaw-large.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kungfuclaw.ai/">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "KungfuClaw",
+      "url": "https://kungfuclaw.ai/",
+      "logo": "images/kungfuclaw-large.png",
+      "description": "KungfuClaw is a security and infrastructure platform for AI agents with privacy-first architecture.",
+      "sameAs": []
+    }
+    </script>
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <header>
         <div class="container">
             <div class="logo">
-                <img src="images/kungfuclaw.png" alt="KungfuClaw Logo">
+                <img src="images/kungfuclaw.png" alt="KungfuClaw Logo - Secure AI Agent Infrastructure Platform" loading="eager">
             </div>
-            <nav class="nav-menu">
+            <nav class="nav-menu" role="navigation" aria-label="Main navigation">
                 <a href="#features" class="nav-link">Features</a>
                 <a href="#architecture" class="nav-link">Architecture</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#contact" class="nav-link">Contact</a>
-                <button id="language-toggle" class="nav-link">English</button>
+                <button id="language-toggle" class="nav-link" aria-label="Toggle language between English and Chinese">English</button>
             </nav>
-            <button class="hamburger" onclick="toggleMenu()">
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
         </div>
     </header>
-    <section id="hero" class="hero">
-        <div class="container">
-            <h1 id="hero-headline"></h1>
-            <p id="hero-description"></p>
-            <a href="#contact" class="cta-button" id="hero-cta"></a>
-        </div>
-    </section>
-    <section id="features" class="features">
-        <div class="container">
-            <h2 id="features-title"></h2>
-            <div class="feature-list">
-                <div class="feature">
-                    <h3 id="feature-4-title"></h3>
-                    <p id="feature-4-description"></p>
+    
+    <main id="main-content">
+        <section id="hero" class="hero" aria-labelledby="hero-headline">
+            <div class="container">
+                <h1 id="hero-headline" lang="en"></h1>
+                <p id="hero-description" lang="en"></p>
+                <a href="#contact" class="cta-button" id="hero-cta" lang="en"></a>
+            </div>
+        </section>
+        
+        <section id="features" class="features" aria-labelledby="features-title">
+            <div class="container">
+                <h2 id="features-title" lang="en"></h2>
+                <div class="feature-list" role="list">
+                    <div class="feature" role="listitem" itemscope itemtype="https://schema.org/SoftwareApplication">
+                        <h3 id="feature-4-title" lang="en" itemprop="name"></h3>
+                        <p id="feature-4-description" lang="en" itemprop="description"></p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="architecture" class="architecture">
-        <div class="container">
-            <h2 id="architecture-title"></h2>
-            <div class="diagram-placeholder">
-                <p id="architecture-description"></p>
+        </section>
+        
+        <section id="architecture" class="architecture" aria-labelledby="architecture-title">
+            <div class="container">
+                <h2 id="architecture-title" lang="en"></h2>
+                <div class="diagram-placeholder">
+                    <img src="images/architecture.png" alt="KungfuClaw Architecture Diagram" loading="lazy">
+                    <p id="architecture-description" lang="en"></p>
+                </div>
             </div>
-        </div>
-    </section>
-    <section id="about" class="about">
+        </section>
+        
+        <section id="about" class="about" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title" lang="en"></h2>
+                <p id="about-description" lang="en"></p>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title" lang="en"></h2>
+                <form id="contact-form" aria-label="Contact form">
+                    <div class="form-group">
+                        <label for="name" id="contact-label-name" lang="en"></label>
+                        <input type="text" id="name" name="name" required aria-required="true" autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" id="contact-label-email" lang="en"></label>
+                        <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" id="contact-label-message" lang="en"></label>
+                        <textarea id="message" name="message" required aria-required="true" maxlength="500"></textarea>
+                    </div>
+                    <button type="submit" class="cta-button" id="contact-submit" disabled lang="en" aria-label="Send contact message"></button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer role="contentinfo">
         <div class="container">
-            <h2 id="about-title"></h2>
-            <p id="about-description"></p>
-        </div>
-    </section>
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 id="contact-title"></h2>
-            <form id="contact-form">
-                <label for="name" id="contact-label-name"></label>
-                <input type="text" id="name" name="name" required>
-                <label for="email" id="contact-label-email"></label>
-                <input type="email" id="email" name="email" required>
-                <label for="message" id="contact-label-message"></label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit" class="cta-button" id="contact-submit" disabled></button>
-            </form>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p id="footer-copyright"></p>
+            <p id="footer-copyright" lang="en"></p>
         </div>
     </footer>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="images/kungfuclaw-large.png" as="image">
+    
     <script src="script.js"></script>
 </body>
 </html>
