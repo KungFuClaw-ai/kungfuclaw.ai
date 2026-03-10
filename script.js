@@ -44,8 +44,18 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // Determine initial language based on browser preference and URL
-    let currentLanguage = localStorage.getItem('language') || (navigator.language.startsWith('zh') ? 'zh' : 'en');
-
+    let currentLanguage = localStorage.getItem('language');
+ 
+    // If no stored language, determine from URL path first, then browser preference
+    if (!currentLanguage) {
+        const pathLanguage = window.location.pathname === '/zh' ? 'zh' : 'en';
+        currentLanguage = pathLanguage;
+    }
+    
+    // Fallback to browser preference if neither URL nor localStorage specifies
+    if (currentLanguage === 'en' && navigator.language.startsWith('zh')) {
+        currentLanguage = 'zh';
+    }
     // Update canonical URL based on language
     function updateCanonicalUrl() {
         const canonicalLink = document.querySelector('link[rel="canonical"]');
