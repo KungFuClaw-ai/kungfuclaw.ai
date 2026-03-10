@@ -104,8 +104,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Update navigation menu items
         const navItems = {
-            en: ['Features', 'Architecture', 'About', 'Contact', 'English'],
-            zh: ['功能', '架构', '关于我们', '联系我们', '中文']
+            en: ['Features', 'Architecture', 'About', 'Contact', '中文'],
+            zh: ['功能', '架构', '关于我们', '联系我们', 'English']
         };
         const navLinks = document.querySelectorAll('.nav-link');
         navLinks.forEach((link, index) => {
